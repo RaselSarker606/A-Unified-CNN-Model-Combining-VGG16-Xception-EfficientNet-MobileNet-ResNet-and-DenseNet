@@ -1,12 +1,12 @@
-🚀 Brain Tumor Classification using Transfer Learning
+**🚀 Brain Tumor Classification using Transfer Learning**
 
 
 
-📖 Overview
+**📖 Overview**
 
 This project implements and compares advanced deep learning models, including VGG16, Xception, EfficientNet, MobileNet, ResNet, and DenseNet, for brain tumor classification. The objective is to analyze their performance and determine the most effective approach for accurate diagnosis.
 
-📂 Dataset
+**📂 Dataset**
 
 📌 The dataset consists of labeled brain tumor images for classification. Key aspects include:
 
@@ -18,7 +18,7 @@ This project implements and compares advanced deep learning models, including VG
 
 (Update dataset details based on the specific dataset used.)
 
-🛠️ Methodology
+**🛠️ Methodology**
 
 🔹 Data Preprocessing
 
@@ -26,7 +26,7 @@ This project implements and compares advanced deep learning models, including VG
 ✅ Applied data augmentation techniques
 ✅ Converted categorical labels to one-hot encoding (if applicable)
 
-🔹 Model Architectures
+**🔹 Model Architectures**
 
 🤖 Transfer Learning Models Implemented
 
@@ -44,19 +44,19 @@ This project implements and compares advanced deep learning models, including VG
 
 ✨ Fine-tuned layers to improve accuracy.
 
-🔹 Training
+**🔹 Training**
 
 🔸 Loss Function: categorical_crossentropy
 🔸 Optimizer: Adam
 🔸 Evaluation Metrics: ✅ Accuracy, ✅ Precision, ✅ Recall, ✅ F1-score
 
-🔹 Visualization
+**🔹 Visualization**
 
 📈 Training vs. Validation Accuracy and Loss
 🧩 Confusion Matrix
 📊 Model performance comparison
 
-📊 Results
+**📊 Results**
 
 🎯 Achieved high accuracy using [best performing model]
 📌 Compared multiple Transfer Learning approaches
