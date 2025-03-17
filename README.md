@@ -1,97 +1,92 @@
-Brain Tumor Classification using Transfer Learning
+<button onclick="copyToClipboard()">📋 Copy README</button>
+<textarea id="readme-text" style="position: absolute; left: -9999px;">
+# Brain Tumor Classification using Transfer Learning
 
-📖 Overview
+![Brain Tumor Classification](https://your-image-url.com/banner.png)
 
-This project implements and compares deep learning models, including VGG16, Xception, EfficientNet, MobileNet, ResNet, and DenseNet, for brain tumor classification. The objective is to analyze their performance and determine the most effective approach for accurate diagnosis.
+## 📖 Overview
+This project implements and compares deep learning models, including **VGG16, Xception, EfficientNet, MobileNet, ResNet, and DenseNet**, for brain tumor classification. The objective is to analyze their performance and determine the most effective approach for accurate diagnosis.
 
-📂 Dataset
-
+## 📂 Dataset
 The dataset consists of labeled brain tumor images for classification. Key aspects include:
+- Multiple tumor classes
+- Split into training, validation, and test sets
+- Preprocessing steps to enhance model performance
 
-Multiple tumor classes
+*(Update dataset details based on the specific dataset used.)*
 
-Split into training, validation, and test sets
+## 🛠️ Methodology
 
-Preprocessing steps to enhance model performance
+### 🔹 Data Preprocessing
+- Normalized pixel values (rescaled to [0,1])
+- Applied data augmentation techniques
+- Converted categorical labels to one-hot encoding (if applicable)
 
-(Update dataset details based on the specific dataset used.)
+### 🔹 Model Architectures
 
-🛠️ Methodology
+#### **Transfer Learning Models Implemented**
+- **VGG16**
+- **Xception**
+- **EfficientNet**
+- **MobileNet**
+- **ResNet**
+- **DenseNet**
 
-🔹 Data Preprocessing
+*Fine-tuned layers to improve accuracy.*
 
-Normalized pixel values (rescaled to [0,1])
+### 🔹 Training
+- **Loss Function:** `categorical_crossentropy`
+- **Optimizer:** `Adam`
+- **Evaluation Metrics:** Accuracy, Precision, Recall, F1-score
 
-Applied data augmentation techniques
+### 🔹 Visualization
+- Training vs. Validation Accuracy and Loss
+- Confusion Matrix
+- Model performance comparison
 
-Converted categorical labels to one-hot encoding (if applicable)
+## 📊 Results
+- Achieved high accuracy using **[best performing model]**
+- Compared multiple Transfer Learning approaches
+- Evaluated trade-offs between accuracy and computational efficiency
 
-🔹 Model Architectures
+## 🚀 How to Run
+### Clone the Repository
+\`\`\`bash
+git clone https://github.com/your-username/brain-tumor-classification.git
+cd brain-tumor-classification
+\`\`\`
 
-Transfer Learning Models Implemented
+### Install Dependencies
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
 
-VGG16
-
-Xception
-
-EfficientNet
-
-MobileNet
-
-ResNet
-
-DenseNet
-
-Fine-tuned layers to improve accuracy.
-
-🔹 Training
-
-Loss Function: categorical_crossentropy
-
-Optimizer: Adam
-
-Evaluation Metrics: Accuracy, Precision, Recall, F1-score
-
-🔹 Visualization
-
-Training vs. Validation Accuracy and Loss
-
-Confusion Matrix
-
-Model performance comparison
-
-📊 Results
-
-Achieved high accuracy using [best performing model]
-
-Compared multiple Transfer Learning approaches
-
-Evaluated trade-offs between accuracy and computational efficiency
-
-🚀 How to Run
-
-Install dependencies:
-
-pip install tensorflow keras numpy pandas matplotlib scikit-learn
-
-Run the Jupyter Notebook:
-
+### Run the Jupyter Notebook
+\`\`\`bash
 jupyter notebook Brain_Tumor_using_VGG16_Xception_EfficientNet_MobileNet_ResNet_DenseNet.ipynb
+\`\`\`
 
-📌 Dependencies
+## 📌 Dependencies
+- TensorFlow
+- Keras
+- NumPy
+- Pandas
+- Matplotlib
+- scikit-learn
 
-TensorFlow
+## 📜 License
+This project is licensed under the **MIT License**.
 
-Keras
+---
 
-NumPy
+⭐ **If you find this project useful, don't forget to star the repository!**
+</textarea>
 
-Pandas
-
-Matplotlib
-
-scikit-learn
-
-📜 License
-
-This project is licensed under the MIT License.
+<script>
+function copyToClipboard() {
+    const text = document.getElementById('readme-text');
+    text.select();
+    document.execCommand('copy');
+    alert('README copied to clipboard!');
+}
+</script>
